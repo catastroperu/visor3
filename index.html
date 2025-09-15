@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <title>Visor COMAS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+</head>
+<body style="margin:0; padding:0; height:100%; overflow:hidden;">
+  <iframe id="visor" style="border:none; width:100%; height:100vh;"></iframe>
+  <script>
+    // URL codificada en Base64 (no aparece directamente en el HTML)
+    const url = atob("aHR0cHM6Ly9leHBlcmllbmNlLmFyY2dpcy5jb20vZXhwZXJpZW5jZS9kMjVmNjBiYzY2YzQ0ZjNhOTc4NWRlM2U5NWI2NjhhMQ==");
+    document.getElementById("visor").src = url;
+  </script>
+</body>
+</html>
